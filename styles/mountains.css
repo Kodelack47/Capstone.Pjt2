@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* body {
+    font-family: Arial, sans-serif;
+  }
+   */
+  /* h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+   */
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  select {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  #mountain_details{
+    text-align: center;
+  }
+  
+  #mountains {
+    max-width: 100%;
+    height: auto;
+  }
+  

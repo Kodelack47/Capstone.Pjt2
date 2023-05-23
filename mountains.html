@@ -13,97 +13,40 @@
     <!-- <link rel="stylesheet" href="styles/nationalParks.css"> -->
     
 
-    <!-- scripts -->
-    <script src="scripts/locationData.js"></script>
-    <!-- <script src="scripts/mountains.js"></script> -->
-    <script src="scripts/mountainsData.js"></script>
-    <!-- <script src="scripts/nationalParks.js"></script> -->
-    <script src="scripts/nationalParksData.js"></script>
-    <!-- <script src="scripts/nav.js"></script> -->
-    <script src="scripts/parkTypeData.js"></script>
+  
 
 </head>
 
 <body>
     <!-- <header id="header"><nav id="nav"></nav></header> -->
 
-    <h1>Muntains</h1>
-    <section id="mountains">
-    <option> select a mountain</option>
-    </section>
-    <div id="mountain_details">Results Will Be Here!</div>
+    <!-- <h1>Mountains</h1>
+    <select id="mountains">
+    <option> select an option</option>
+    </select>
+    <div >Results Will Be Here!</div> -->
 
-    <!-- <section id="nationalParks"></section> -->
+
+    <!-- fix this make it a div for the mont img to show -->
+    <div class="content">
+        <select id="mountains">
+          <option>Select a mountain</option>
+        </select>
+    
+        <div id="mountain_details">
+        </div>
+      </div>
 
     
 </body>
 
-<!-- <script>
-    //Get the select element
-var selectMountain = document.createElement("select");
-
-// Create an array of mountain names
-var mountains = ["Mount Everest", "K2", "Kangchenjunga", "Lhotse", "Makalu"];
-
-// Populate the select element with options
-for (var i = 0; i < mountains.length; i++) {
-  var option = document.createElement("option");
-  option.text = mountains[i];
-  selectMountain.add(option);
-}
-
-// Get the mountains section
-var mountainsSection = document.getElementById("mountains");
-
-// Append the select element to the mountains section
-mountainsSection.appendChild(selectMountain);
-
-// Get the mountain details div
-var mountainDetails = document.getElementById("mountain_details");
-
-// Event listener for the select element
-selectMountain.addEventListener("change", function() {
-  // Get the selected mountain
-  var selectedMountain = selectMountain.options[selectMountain.selectedIndex].text;
-
-  // Update the mountain details
-  mountainDetails.textContent = "Selected mountain: " + selectedMountain;
-});
-
-
-</script> -->
-
- <script>
-   mountainsArray.forEach(mountain => {
-    console.log(mountain.name)
-    let mo = document.createElement("option")
-    mo.innerHTML = mountain.name
-    mo.value = mountain.name
-    mountains.appendChild(mo)
-    });
-
-function displayMountain(m){ //come back here
-    //  <p>${mount.name}</p>
-    // <p>${mount.location}</p>
-    // <p>${mount.description}</p>
-    return`
-    <img src="images/${m.img}">
-    <p>Description:<br>
-    ${m.desc}</p>
-    <h2> elevation: ${m.elevation} </h2>
-    `;
-}
-
-function onClickMountain(){
-    let name = mountains.selectedOptions[0].value
-    mountainsArray.forEach(mountain => {
-        if(mountain.name == name){
-            // let mountain = mountainsArray.find(m => m.name === name)
-            mountain_details.innerHTML = displayMountain(mountain)
-        }
-    });
-}
-mountains.addEventListener("change", onClickMountain)
-</script> 
-
+  <!-- scripts -->
+    <!-- <script src="scripts/locationData.js"></script> -->
+    <!-- <script src="scripts/nationalParks.js"></script> -->
+    <!-- <script src="scripts/nationalParksData.js"></script> -->
+    <!-- <script src="scripts/nav.js"></script> -->
+    <!-- <script src="scripts/parkTypeData.js"></script> -->
+    <script src="scripts/mountainsData.js"></script>
+    <script src="scripts/mountains.js"></script>
+    
 </html>
