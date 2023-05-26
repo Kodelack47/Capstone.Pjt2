@@ -11,7 +11,15 @@ const navMenu=[
 {
     name: "National Park",
     link: "nationalPark.html"
-}
+},
+{
+    name:"Bookings",
+    link:"bookings.html"
+},
+{
+    name: "About Us",
+    link: "about.html"
+},
 
 ]
 
